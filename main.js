@@ -45,7 +45,7 @@ const modules = {
     loginwithappstate: loginFB,
     checkUpdate: async function () {
         try {
-            const { data } = await axios.get("https://raw.githubusercontent.com/JABD-Team/JABD-Bot-0/master/package.json");
+            const { data } = await axios.get("https://github.com/HamsterBotV1/b0t/blob/main/package.json");
             if (data.version != package.version) {
                 console.log("Đã có bản cập nhật mới OwO", "update", 1);
             } else console.log("Bạn đang sử dụng phiên bản mới nhất UwU", "update", 3);
